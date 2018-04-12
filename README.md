@@ -1,6 +1,6 @@
 # How to build Tensorflow on Windows with /MT
 
-__This repository helps others who aim to build Tensorflow as a static library (/MT) from source and incorporate it into an empty Visual Studio Project __.
+__This repository helps others who aim to build Tensorflow as a static library (/MT) from source and incorporate it into an empty Visual Studio Project__.
 
 Each folder in this repo contains instructions for building a specific TensorFlow version.
 

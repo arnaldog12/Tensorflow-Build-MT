@@ -36,7 +36,7 @@ $ cd C:\tensorflow\build
 $ mybuild.bat
 ```
 6. There is a bug in Tensorflow 1.4 tf_stream_executor.vcxproj (as referenced by [this video](https://www.youtube.com/watch?v=gj_4Yv94LgQ)). So, open ```C:/tensorflow/build/tf_stream_executor.vcxproj``` in a text editor and add the path ```C:\tensorflow\third_party\toolchains\gpus\cuda``` to the additional include directories in configuration __Release x64__ section, as in the picture below:
-![tf_stream_executor.vcxproj](images/tf_stream_executor.png)
+![tf_stream_executor.vcxproj](images/tf_stream_executor.PNG)
 7. Invoke MSBuild to build TensorFlow:
 ```sh
 $ %MSBUILD_EXE% /p:Configuration=Release /p:Platform=x64 /m:6 tensorflow.sln /t:Clean;Build /p:PreferredToolArchitecture=x64
@@ -47,13 +47,13 @@ $ %MSBUILD_EXE% /p:Configuration=Release /p:Platform=x64 /m:6 tensorflow.sln /t:
 1. Open Visual Studio 2017, click on File ➡️ New ➡️  Project and under Visual C++/General, choose the Empty Project template. I will name it _TensorflowTest_. Save it wherever you want.
 2. Add a new .cpp file (main.cpp) and paste [this code](https://gist.github.com/arnaldog12/35822769cb2664541f307b191c59972e).
 3. Right-click on your project and choose Properties. Go to C/C++ ➡️ General ➡️ Additional Include Directories and add the following directories:
-![](images/add_include_directories.png)
+![](images/add_include_directories.PNG)
 
 4. In Project Properties ➡️ Linker ➡️ General ➡️ Additional Libraries Directories, add the following paths:
-![](images/add_lib_directories.png)
+![](images/add_lib_directories.PNG)
 
 5. In Project Properties ➡️ Linker ➡️ Input ➡️ Additional Dependencies, add the following dependencies:
-![](images/add_dependencies.png)
+![](images/add_dependencies.PNG)
 
 6. You are now able to build our _TensorflowTest_ project. Just right-click on the project and choose build.
 
