@@ -7,7 +7,7 @@ Each folder in this repo contains instructions for building a specific TensorFlo
 ## Build Status
 | version |     CPU    |     GPU    |
 |:-------:|:----------:|:----------:|
-|   1.4   |   Succeed  | In Process |
+|   1.4   |   Succeed  |   Succeed  |
 |   1.7   | In Process | In Process |
 
 
