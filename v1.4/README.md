@@ -66,7 +66,7 @@ $ my-build-cuda.bat
 1. Open Visual Studio 2017, click on File ➡️ New ➡️  Project and under Visual C++/General, choose the Empty Project template. I will name it _TensorflowTest_. Save it wherever you want.
 
 2. Change the _Solution Configuration_ to __Release__, and the _Solution Platform_ to __x64__:
-![](images/solution_configurations.PNG)
+![](images/solution_configurations.png)
 
 3. Add a new .cpp file (main.cpp) and paste [this code](https://gist.github.com/arnaldog12/35822769cb2664541f307b191c59972e).
 
