@@ -64,17 +64,40 @@ $ my-build-cuda.bat
 ## Visual Studio Integration
 
 1. Open Visual Studio 2017, click on File ➡️ New ➡️  Project and under Visual C++/General, choose the Empty Project template. I will name it _TensorflowTest_. Save it wherever you want.
+
 2. Add a new .cpp file (main.cpp) and paste [this code](https://gist.github.com/arnaldog12/35822769cb2664541f307b191c59972e).
-3. Right-click on your project and choose Properties. Go to C/C++ ➡️ General ➡️ Additional Include Directories and add the following directories:
+
+3. Right-click on your project and choose Properties. Go to C/C++ ➡️ Code Generation and change the _Runtime Library_ option to __Multi-Threaded (/MT)__.
+
+4. In Project Properties ➡️ C/C++ ➡️ General ➡️ Additional Include Directories, add the following directories:
 ![](images/add_include_directories.PNG)
 
-4. In Project Properties ➡️ Linker ➡️ General ➡️ Additional Libraries Directories, add the following paths:
+5. In Project Properties ➡️ Linker ➡️ General ➡️ Additional Libraries Directories, add the following paths:
 ![](images/add_lib_directories.PNG)
 
-5. In Project Properties ➡️ Linker ➡️ Input ➡️ Additional Dependencies, add the following dependencies:
+6. In Project Properties ➡️ Linker ➡️ Input ➡️ Additional Dependencies, add the following dependencies:
 ![](images/add_dependencies.PNG)
 
-6. You are now able to build our _TensorflowTest_ project. Just right-click on the project and choose the option "build".
+7. In Project Properties ➡️ Linker ➡️ Command Line ➡️ Additional Options, add the following text:
+
+```
+/machine:x64
+/ignore:4049 /ignore:4197 /ignore:4217 /ignore:4221
+/WHOLEARCHIVE:tf_cc.lib
+/WHOLEARCHIVE:tf_cc_framework.lib
+/WHOLEARCHIVE:tf_cc_ops.lib
+/WHOLEARCHIVE:tf_core_cpu.lib
+/WHOLEARCHIVE:tf_core_direct_session.lib
+/WHOLEARCHIVE:tf_core_framework.lib
+/WHOLEARCHIVE:tf_core_kernels.lib
+/WHOLEARCHIVE:tf_core_lib.lib
+/WHOLEARCHIVE:tf_core_ops.lib   
+/WHOLEARCHIVE:tf_stream_executor.lib
+/WHOLEARCHIVE:libjpeg.lib
+/FORCE:MULTIPLE
+```
+
+8. You are now able to build our _TensorflowTest_ project. Just right-click on the project and choose the option "build".
 
 ### Have you encountered some error?
 Please, open an issue! Your problem may help others.

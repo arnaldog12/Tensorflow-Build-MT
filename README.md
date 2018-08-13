@@ -5,10 +5,10 @@ __This repository helps others who aim to build Tensorflow as a static library (
 Each folder in this repo contains instructions for building a specific TensorFlow version.
 
 ## Build Status
-| version |     CPU    |     GPU    |
-|:-------:|:----------:|:----------:|
-|   1.4   |   Succeed  |   Succeed  |
-|   1.7   | In Process | In Process |
+| version |     CPU     |     GPU     |
+|:-------:|:-----------:|:-----------:|
+|   1.4   |   Succeed   |   Succeed   |
+|   1.7   | In Progress | In Progress |
 
 
 ## Contributing
