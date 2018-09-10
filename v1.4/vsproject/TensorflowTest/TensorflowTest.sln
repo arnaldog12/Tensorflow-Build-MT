@@ -7,30 +7,60 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TensorflowGPU", "Tensorflow
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TensorflowCPU", "TensorflowCPU\TensorflowCPU.vcxproj", "{A6B9EEDC-BDC1-4912-A962-F417D5FCF0AA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TensorflowARM", "TensorflowARM\TensorflowARM.vcxproj", "{572F5366-C1E8-455F-ABF7-D457BADD62B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4BDD0D8-5F07-4908-ADB8-FD47C6C1E850}.Debug|ARM.ActiveCfg = Debug|Win32
+		{A4BDD0D8-5F07-4908-ADB8-FD47C6C1E850}.Debug|ARM64.ActiveCfg = Debug|Win32
 		{A4BDD0D8-5F07-4908-ADB8-FD47C6C1E850}.Debug|x64.ActiveCfg = Debug|x64
 		{A4BDD0D8-5F07-4908-ADB8-FD47C6C1E850}.Debug|x64.Build.0 = Debug|x64
 		{A4BDD0D8-5F07-4908-ADB8-FD47C6C1E850}.Debug|x86.ActiveCfg = Debug|Win32
 		{A4BDD0D8-5F07-4908-ADB8-FD47C6C1E850}.Debug|x86.Build.0 = Debug|Win32
+		{A4BDD0D8-5F07-4908-ADB8-FD47C6C1E850}.Release|ARM.ActiveCfg = Release|x64
+		{A4BDD0D8-5F07-4908-ADB8-FD47C6C1E850}.Release|ARM64.ActiveCfg = Release|Win32
 		{A4BDD0D8-5F07-4908-ADB8-FD47C6C1E850}.Release|x64.ActiveCfg = Release|x64
 		{A4BDD0D8-5F07-4908-ADB8-FD47C6C1E850}.Release|x64.Build.0 = Release|x64
 		{A4BDD0D8-5F07-4908-ADB8-FD47C6C1E850}.Release|x86.ActiveCfg = Release|Win32
 		{A4BDD0D8-5F07-4908-ADB8-FD47C6C1E850}.Release|x86.Build.0 = Release|Win32
+		{A6B9EEDC-BDC1-4912-A962-F417D5FCF0AA}.Debug|ARM.ActiveCfg = Debug|Win32
+		{A6B9EEDC-BDC1-4912-A962-F417D5FCF0AA}.Debug|ARM64.ActiveCfg = Debug|Win32
 		{A6B9EEDC-BDC1-4912-A962-F417D5FCF0AA}.Debug|x64.ActiveCfg = Debug|x64
 		{A6B9EEDC-BDC1-4912-A962-F417D5FCF0AA}.Debug|x64.Build.0 = Debug|x64
 		{A6B9EEDC-BDC1-4912-A962-F417D5FCF0AA}.Debug|x86.ActiveCfg = Debug|Win32
 		{A6B9EEDC-BDC1-4912-A962-F417D5FCF0AA}.Debug|x86.Build.0 = Debug|Win32
+		{A6B9EEDC-BDC1-4912-A962-F417D5FCF0AA}.Release|ARM.ActiveCfg = Release|x64
+		{A6B9EEDC-BDC1-4912-A962-F417D5FCF0AA}.Release|ARM64.ActiveCfg = Release|Win32
 		{A6B9EEDC-BDC1-4912-A962-F417D5FCF0AA}.Release|x64.ActiveCfg = Release|x64
 		{A6B9EEDC-BDC1-4912-A962-F417D5FCF0AA}.Release|x64.Build.0 = Release|x64
 		{A6B9EEDC-BDC1-4912-A962-F417D5FCF0AA}.Release|x86.ActiveCfg = Release|Win32
 		{A6B9EEDC-BDC1-4912-A962-F417D5FCF0AA}.Release|x86.Build.0 = Release|Win32
+		{572F5366-C1E8-455F-ABF7-D457BADD62B3}.Debug|ARM.ActiveCfg = Debug|ARM
+		{572F5366-C1E8-455F-ABF7-D457BADD62B3}.Debug|ARM.Build.0 = Debug|ARM
+		{572F5366-C1E8-455F-ABF7-D457BADD62B3}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{572F5366-C1E8-455F-ABF7-D457BADD62B3}.Debug|ARM64.Build.0 = Debug|ARM64
+		{572F5366-C1E8-455F-ABF7-D457BADD62B3}.Debug|x64.ActiveCfg = Debug|x64
+		{572F5366-C1E8-455F-ABF7-D457BADD62B3}.Debug|x64.Build.0 = Debug|x64
+		{572F5366-C1E8-455F-ABF7-D457BADD62B3}.Debug|x86.ActiveCfg = Debug|x86
+		{572F5366-C1E8-455F-ABF7-D457BADD62B3}.Debug|x86.Build.0 = Debug|x86
+		{572F5366-C1E8-455F-ABF7-D457BADD62B3}.Release|ARM.ActiveCfg = Release|ARM
+		{572F5366-C1E8-455F-ABF7-D457BADD62B3}.Release|ARM.Build.0 = Release|ARM
+		{572F5366-C1E8-455F-ABF7-D457BADD62B3}.Release|ARM64.ActiveCfg = Release|ARM64
+		{572F5366-C1E8-455F-ABF7-D457BADD62B3}.Release|ARM64.Build.0 = Release|ARM64
+		{572F5366-C1E8-455F-ABF7-D457BADD62B3}.Release|x64.ActiveCfg = Release|x64
+		{572F5366-C1E8-455F-ABF7-D457BADD62B3}.Release|x64.Build.0 = Release|x64
+		{572F5366-C1E8-455F-ABF7-D457BADD62B3}.Release|x86.ActiveCfg = Release|x86
+		{572F5366-C1E8-455F-ABF7-D457BADD62B3}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
