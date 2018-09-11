@@ -72,7 +72,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>Clang_3_6</PlatformToolset>
+    <PlatformToolset>Clang_3_8</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -159,6 +159,8 @@
     <Link>
       <AdditionalDependencies>C:\tensorflow\tensorflow\contrib\makefile\gen\lib\android_armeabi-v7a\libtensorflow-core.a;C:\tensorflow\tensorflow\contrib\makefile\gen\protobuf_android\armeabi-v7a\lib\libprotobuf.a;C:\tensorflow\tensorflow\contrib\makefile\gen\protobuf_android\armeabi-v7a\lib\libprotobuf-lite.a;C:\tensorflow\tensorflow\contrib\makefile\gen\protobuf_android\armeabi-v7a\lib\libprotoc.a;C:\tensorflow\tensorflow\contrib\makefile\downloads\nsync\builds\armeabi-v7a.android.c++11\nsync.a;%(AdditionalDependencies)</AdditionalDependencies>
       <LibraryDependencies>$(StlLibraryName);z;m;%(LibraryDependencies)</LibraryDependencies>
+      <WholeArchiveBegin>true</WholeArchiveBegin>
+      <AdditionalOptions>-z muldefs -ljnigraphics %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
