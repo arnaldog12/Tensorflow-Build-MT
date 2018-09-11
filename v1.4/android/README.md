@@ -66,7 +66,6 @@ $ make -f tensorflow/contrib/makefile/Makefile TARGET=ANDROID
   C:\tensorflow\tensorflow\contrib\makefile\downloads\eigen
   C:\tensorflow\tensorflow\contrib\makefile\downloads\nsync\public
   C:\tensorflow
-  %(AdditionalIncludeDirectories)
   ```
 
 5. In Project Properties ➡️ Linker ➡️ All Options, make the following changes:
@@ -79,7 +78,6 @@ $ make -f tensorflow/contrib/makefile/Makefile TARGET=ANDROID
   C:\tensorflow\tensorflow\contrib\makefile\gen\protobuf_android\armeabi-v7a\lib\libprotobuf-lite.a
   C:\tensorflow\tensorflow\contrib\makefile\gen\protobuf_android\armeabi-v7a\lib\libprotoc.a
   C:\tensorflow\tensorflow\contrib\makefile\downloads\nsync\builds\armeabi-v7a.android.c++11\nsync.a
-  %(AdditionalDependencies)
   ```
 
 You are now ready to write your code to generate a library for an Android application.
