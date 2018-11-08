@@ -5,7 +5,7 @@ This instruction helps who aims to use Tensorflow directly in a C++ application 
 ## Known-good configurations
 In order to build, you'll need the following requirements:
 
-- [Android NDK 14b](https://developer.android.com/ndk/downloads/older_releases)
+- [Android NDK 14b](https://developer.android.com/ndk/downloads/older_releases) (Android NDK 15c works too.)
 - Android SDK 21
 - Clang 3.8
 
@@ -31,7 +31,7 @@ $ tensorflow/contrib/makefile/download_dependencies.sh
 ```sh
 $ tensorflow/contrib/makefile/compile_android_protobuf.sh -c
 ```
-7. Compile __nsync__ library for host and target platforms. Change the architecture for
+7. Compile __nsync__ library for host and target platforms. Change the architecture (```-a``` option) according to your needs.
 ```sh
 $ tensorflow/contrib/makefile/compile_nsync.sh
 $ tensorflow/contrib/makefile/compile_nsync.sh -t android -a armeabi-v7a
