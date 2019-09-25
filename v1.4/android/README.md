@@ -29,7 +29,7 @@ $ tensorflow/contrib/makefile/download_dependencies.sh
 ```
 6. Compile __protobuf__ library:
 ```sh
-$ tensorflow/contrib/makefile/compile_android_protobuf.sh -c
+$ tensorflow/contrib/makefile/compile_android_protobuf.sh -a armeabi-v7a -c
 ```
 7. Compile __nsync__ library for host and target platforms. Change the architecture (```-a``` option) according to your needs.
 ```sh
@@ -43,7 +43,7 @@ $ export TARGET_NSYNC_LIB='tensorflow/contrib/makefile/downloads/nsync/builds/ar
 ```
 9. Finally, compile static library using make command:
 ```sh
-$ make -f tensorflow/contrib/makefile/Makefile TARGET=ANDROID
+$ make -f tensorflow/contrib/makefile/Makefile TARGET=ANDROID ANDROID_ARCH=armeabi-v7a
 ```
 
 ## Visual Studio Integration
